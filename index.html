@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#075BCE">
+<meta name="theme-color" content="#06245A">
 <meta name="description" content="Body OS — your personal health operating system">
 <title>Body OS — Personal Health Operating System</title>
+<link rel="icon" href="assets/body-os-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/body-os-icon.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="shell">
 <aside class="sidebar" id="sidebar">
-  <div class="brand"><div class="brandmark"><i></i><i></i><i></i></div><div><strong>Body OS</strong><small>Your Personal Health<br>Operating System</small></div></div>
+  <button class="brand brand-home" type="button" data-view-link="dashboard" aria-label="Return to Body OS dashboard"><img src="assets/body-os-logo.svg" alt="Body OS — Your Personal Health Operating System"></button>
   <nav class="nav" id="nav">
     <button class="active" data-view="dashboard"><span class="icon">⌂</span>Dashboard</button>
     <button data-view="timeline"><span class="icon">☷</span>Health Timeline</button>
@@ -27,7 +29,7 @@
   <div class="sidebar-foot"><span>⚙ Settings</span><span>↪ Log out</span></div>
 </aside>
 <main class="main">
-  <header class="topbar"><button class="mobile-menu" id="menu">☰</button><div></div><div class="top-actions"><button class="connect" data-action="connect">☁ <span>Connect Data</span></button><button class="round">♧</button><div class="user">KD</div></div></header>
+  <header class="topbar"><div class="top-left"><button class="mobile-menu" id="menu" aria-label="Open navigation">☰</button><button class="mobile-brand" type="button" data-view-link="dashboard" aria-label="Return to Body OS dashboard"><img src="assets/body-os-logo.svg" alt="Body OS"></button></div><div class="top-actions"><button class="connect" data-action="connect">☁ <span>Connect Data</span></button><button class="round">♧</button><div class="user">KD</div></div></header>
   <div class="content">
     <section class="view active" id="dashboard">
       <div class="hero"><div><h1>Good morning, Kevin 👋</h1><p>Here’s your health overview for today.</p></div><div class="datepill">Today · 23 July 2026</div></div>
